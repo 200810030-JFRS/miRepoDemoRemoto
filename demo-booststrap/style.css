@@ -1,0 +1,15 @@
+i{
+    font-size: 50px;
+    color: aquamarine;
+}
+
+.container{
+    background-color: purple;
+    height: 800px;
+}
+
+@media screen and (min-width:768px ){
+    .navbar-brand {
+        display: none;
+    }
+}
