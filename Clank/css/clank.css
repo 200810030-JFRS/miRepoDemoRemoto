@@ -1,0 +1,162 @@
+/* ==========================================================================
+   Simulación del Framework Clank (Mobile-First Prototype)
+   ========================================================================== */
+
+/* --- 1. Reset y Base --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2; /* Fondo gris claro típico de apps */
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- 2. Navegación (Barras) --- */
+.clank-bar {
+    background-color: #2c3e50; /* Color oscuro tipo toolbar */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 50px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.clank-title {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* --- 3. Grid System y Contenedores --- */
+.clank-content {
+    padding-bottom: 20px;
+}
+
+.clank-container {
+    padding: 15px;
+}
+
+h2 {
+    font-size: 14px;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+/* Simulación de la grilla de 12 columnas (ejemplo con 6/12) */
+.clank-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clank-span-6 {
+    width: 48%; /* 50% menos un pequeño margen para separar */
+}
+
+/* --- 4. Botones --- */
+.clank-btn {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.clank-btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.clank-btn-block {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* --- 5. Formularios --- */
+.clank-form {
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.clank-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Evita el zoom automático en iOS */
+}
+
+.clank-toggle {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.clank-toggle input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+/* --- 6. Listas (Componentes de contenido) --- */
+.clank-list {
+    list-style: none;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.clank-list li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clank-list li:last-child {
+    border-bottom: none;
+}
+
+/* --- 7. Badges y Clases de Ayuda --- */
+.clank-badge-primary {
+    background-color: #e74c3c;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Simulación rápida de íconos usando caracteres Unicode */
+.clank-icon-left-nav::before { content: "◀ "; font-size: 12px; }
+.clank-icon-gear::before { content: "⚙"; font-size: 18px; }
+.clank-icon-right-nav::before { content: " ▶"; font-size: 12px; color: #ccc; }
+
+.clank-pull-left { text-align: left; }
+.clank-pull-right { text-align: right; }

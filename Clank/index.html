@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Demostración App con Clank</title>
+    
+    <link rel="stylesheet" href="css/clank.css">
+    
+    <style>
+        /* Solo para la demo: visualizar la grilla */
+        .demo-caja { background-color: #e0e0e0; padding: 10px; text-align: center; border-radius: 4px; }
+        .mt-2 { margin-top: 20px; } /* Clase de ayuda de margen */
+        .text-center { text-align: center; } /* Clase de ayuda de alineación */
+    </style>
+</head>
+<body>
+
+    <header class="clank-bar clank-bar-nav">
+        <a class="clank-btn clank-pull-left" href="#">
+            <i class="clank-icon-left-nav"></i> Atrás
+        </a>
+        <h1 class="clank-title">Mi App Clank</h1>
+        <a class="clank-btn clank-pull-right" href="#">
+            <i class="clank-icon-gear"></i>
+        </a>
+    </header>
+
+    <div class="clank-content">
+
+        <div class="clank-container mt-2">
+            <h2 class="text-center">Sistema de Grilla (12 col)</h2>
+            <div class="clank-row">
+                <div class="clank-span-6">
+                    <div class="demo-caja">Columna Izquierda</div>
+                </div>
+                <div class="clank-span-6">
+                    <div class="demo-caja">Columna Derecha</div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="clank-container">
+            <h2>Crear Cuenta</h2>
+            <form class="clank-form">
+                <input type="text" placeholder="Nombre completo" class="clank-input">
+                <input type="email" placeholder="Correo electrónico" class="clank-input">
+                
+                <label class="clank-toggle">
+                    <input type="checkbox"> Suscribirse al boletín
+                    <div class="clank-toggle-handle"></div>
+                </label>
+
+                <button type="button" class="clank-btn clank-btn-primary clank-btn-block mt-2">
+                    Registrarse
+                </button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="clank-container">
+            <h2>Opciones</h2>
+            <ul class="clank-list">
+                <li>Perfil de usuario <span class="clank-badge clank-badge-primary">Nuevo</span></li>
+                <li>Notificaciones push <i class="clank-icon-right-nav clank-pull-right"></i></li>
+                <li>Privacidad <i class="clank-icon-right-nav clank-pull-right"></i></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
